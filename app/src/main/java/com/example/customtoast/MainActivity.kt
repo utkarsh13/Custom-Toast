@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         findViewById<Button>(R.id.show_toast).setOnClickListener {
-            CustomToast.create(this, "This is custom toast. This is long text", "This is subtitle", Gravity.BOTTOM or Gravity.CENTER)
+            CustomToast.create(this, "This is an important heading", "Some irrelevant detail", Gravity.BOTTOM or Gravity.CENTER)
         }
     }
 

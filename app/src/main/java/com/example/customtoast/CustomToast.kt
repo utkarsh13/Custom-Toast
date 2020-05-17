@@ -28,11 +28,10 @@ class CustomToast {
                 toast.setGravity(it, Utils.dpToPx(0), Utils.dpToPx(24))
             }
 
-            val toastView = LayoutInflater.from(context).inflate(
-                R.layout.toast_view, null
-            )
+            val toastView = LayoutInflater.from(context).inflate(R.layout.toast_view, null)
 
-            toastView.background = tint9PatchDrawableFrame(context)
+//            toastView.background = tint9PatchDrawableFrame(context)
+            toastView.background = getBackgroundDrawable(context, 48)
             toastView.toast_title.text = title
             toastView.toast_subtitle.text = subtitle
 
