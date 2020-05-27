@@ -14,6 +14,10 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.show_toast).setOnClickListener {
             CustomToast.create(this, "This is an important heading", "Some irrelevant detail", Gravity.BOTTOM or Gravity.CENTER)
         }
+
+        findViewById<Button>(R.id.toast_animation).setOnClickListener {
+            CustomToast.createWithAnimation(this, "This is an important heading", "Some irrelevant detail", Gravity.BOTTOM or Gravity.CENTER)
+        }
     }
 
 
